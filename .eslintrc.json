@@ -21,13 +21,19 @@
       "node/no-missing-import": "error"
     }
   },
-  overrides: [
+  "overrides": [
     {
-      files: ["**/*.ts", "**/*.tsx"],
-      extends: baseConfigs.concat(typescriptConfigs),
-      parser: "@typescript-eslint/parser",
-      parserOptions: {
-        sourceType: "module",
+      "files": [
+        "**/*.ts",
+        "**/*.tsx"
+      ],
+      "extends": [
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
+      ],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "sourceType": "module"
       }
     }
   ]
