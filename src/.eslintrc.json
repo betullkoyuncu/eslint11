@@ -1,23 +1,26 @@
-module.exports = {
-  settings: {
-    node: {
-      allowModules: ["electron"],
-      resolvePaths: [__dirname],
-      tryExtensions: [".js", ".json", ".node"],
-    },
-    extends: ["eslint:recommended"],
-    parser: "@babel/eslint-parser",
-    plugins: ["@typescript-eslint"],
-    parserOptions: {
-      ecmaVersion: 2018,
-      sourceType: "module",
-
-      rules: {
-        quotes: ["error", "single"],
-        "no-console": "off",
-        semi: "off",
-        "node/no-missing-import": "error",
-      },
-    },
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "github", "jest", "prettier"],
+  "extends": [
+    "plugin:github/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2019,
+    "sourceType": "module"
   },
-};
+  "env": {
+    "node": true,
+    "es6": true,
+    "jest/globals": true
+  },
+  "rules": {
+    "filenames/match-regex": "off",
+    "github/no-then": "off",
+    "i18n-text/no-en": "off",
+    "node/no-missing-import": "error"
+  }
+}
