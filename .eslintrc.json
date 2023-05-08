@@ -10,13 +10,11 @@
         "@typescript-eslint"
     ],
     "rules": {
-        "@typescript-eslint/strict-boolean-expressions": [
-            2,
-            {
-                "allowString" : false,
-                "allowNumber" : false
-            }
-        ]
+       "node/no-missing-import": ["error", {
+            "allowModules": [],
+            "resolvePaths": ["/path/to/a/modules/directory"],
+            "tryExtensions": [".js", ".json", ".node"]
+        }]
     },
     "ignorePatterns": ["src/**/*.test.ts", "src/frontend/generated/*"]
 }
