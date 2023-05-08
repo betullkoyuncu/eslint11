@@ -76,9 +76,6 @@ export const proficiencyCalcType = {
   MOVING_AVERAGE: "MOVING_AVERAGE",
   POWER_LAW: "POWER_LAW",
 };
-// eslint-disable-next-line no-useless-escape
-export const EMAIL_PATTERN_FORMAT =
-  /^[_A-Za-z0-9-'\+]+(\.[_A-Za-z0-9-']+)*@[A-Za-z0-9]+([A-Za-z0-9\-\.]+)*(\.[A-Za-z]{1,25})$/;
 
 export const V1_DEMO_DISTRICT_ID = 44852;
 
