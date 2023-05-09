@@ -29,14 +29,6 @@
     }
   ],
   "settings": {
-    "node": {
-      "tryExtensions": [
-        ".js",
-        ".json",
-        ".node",
-        ".ts"
-      ]
-    },
    // "import/parsers": {
    //   "@typescript-eslint/parser": [
     //    ".ts",
@@ -50,14 +42,13 @@
   //  },
     "jest": {
       "version": 26
+    },
+    "node": {
+      "allowModules": ["electron"],
+      "tryExtensions": [".js", ".json", ".node", ".ts"]
     }
   },
-    "rules": {
-        "@typescript-eslint/quotes": "off",
-        "node/no-missing-import": ["error", {
-        "allowModules": [],
-        "resolvePaths": ["/path/to/a/modules/directory"],
-        "tryExtensions": [".js", ".json", ".node", ".ts", ".tsx"]
-    }]
+   "rules": {
+      "node/no-missing-import": "error"
   }
 }
