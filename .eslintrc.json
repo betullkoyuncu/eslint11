@@ -29,7 +29,6 @@
     }
   ],
   "settings": {
-    "allowTemplateLiterals": false,
     "node": {
       "tryExtensions": [
         ".js",
@@ -52,5 +51,8 @@
     "jest": {
       "version": 26
     }
+  },
+  "rules": {
+          "@typescript-eslint/quotes": "off"
   }
 }
