@@ -15,6 +15,17 @@
   "parserOptions": {
     "requireConfigFile": false
   },
+  "overrides": [
+    {
+      "files": [
+        "**/*.ts",
+        "**/*.tsx"
+      ],
+      "parserOptions": {
+        "sourceType": "module"
+      }
+    }
+  ],
   "settings": {
     "node": {
       "tryExtensions": [
