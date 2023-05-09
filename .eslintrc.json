@@ -1,31 +1,16 @@
 {
   "root": true,
   "plugins": [
-    "@typescript-eslint",
-    "node"
-  ],
-  "extends": [
-    "standard",
-    "plugin:security/recommended"
+    "@typescript-eslint"
   ],
   "parser": "@babel/eslint-parser",
   "parserOptions": {
     "requireConfigFile": false
   },
-  "settings": {
-    "node": {
-      "resolvePaths": [
-        "node_modules/@types"
-      ],
-      "tryExtensions": [
-        ".js",
-        ".json",
-        ".node",
-        ".ts",
-        ".d.ts"
-      ]
-    }
-  },
+  "extends": [
+    "standard",
+    "plugin:security/recommended"
+  ],
   "overrides": [
     {
       "files": [
@@ -33,15 +18,49 @@
         "**/*.tsx"
       ],
       "extends": [
-        "standard",
-        "plugin:security/recommended"
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
       ],
       "parser": "@typescript-eslint/parser",
       "parserOptions": {
         "sourceType": "module"
+      },
+      "plugins": [
+        "import"
+      ],
+      "rules": {
+        "import/no-unresolved": "error"
+      },
+      "settings": {
+        "import/parsers": {
+          "@typescript-eslint/parser": [
+            ".ts",
+            ".tsx"
+          ]
+        }
       }
     }
   ],
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [
+        ".ts",
+        ".tsx"
+      ]
+    },
+    "jest": {
+      "version": 26
+    },
+    "node": {
+      "allowModules": [],
+      "tryExtensions": [
+        ".js",
+        ".json",
+        ".node",
+        ".ts"
+      ]
+    }
+  },
   "rules": {
     "quotes": [
       "error",
