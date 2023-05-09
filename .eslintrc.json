@@ -26,6 +26,29 @@
       }
     }
   ],
+  "settings": {
+    "node": {
+      "tryExtensions": [
+        ".js",
+        ".json",
+        ".node",
+        ".ts"
+      ]
+    },
+    "import/parsers": {
+      "@typescript-eslint/parser": [
+        ".ts",
+        ".tsx"
+      ]
+    },
+    "import/resolver": {
+      "typescript": true,
+      "node": true
+    },
+    "jest": {
+      "version": 26
+    }
+  },
   "rules": {
     "quotes": [
       "error",
