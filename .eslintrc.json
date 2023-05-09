@@ -5,7 +5,7 @@
     "node"
   ],
   "extends": [
-    "standard", 
+    "standard",
     "plugin:security/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
@@ -20,7 +20,7 @@
       "tryExtensions": [
         ".js",
         ".json",
-        ".node",
+        ".node"
       ]
     }
   },
