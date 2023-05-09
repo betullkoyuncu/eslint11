@@ -1,17 +1,29 @@
 {
   "root": true,
   "plugins": [
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "node"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:node/recommended"
   ],
   "parser": "@babel/eslint-parser",
   "parserOptions": {
+    "ecmaVersion": 2018,
     "requireConfigFile": false
   },
-  "settings":{
+  "settings": {
     "node": {
-      "resolvePaths": ["node_modules/@types"],
-      "tryExtensions": [".js", ".json", ".node", ".ts", ".d.ts"]
-  }
+      "tryExtensions": [
+        ".js",
+        ".json",
+        ".node",
+        ".ts"
+      ]
+    }
   },
   "rules": {
     "quotes": [
