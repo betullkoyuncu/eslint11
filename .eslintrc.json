@@ -1,20 +1,47 @@
 {
   "root": true,
   "plugins": [
-    "standard", 
-    "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended"
+    "@typescript-eslint",
+    "node"
+  ],
+  "extends": [
+    "standard",
+    "plugin:security/recommended"
   ],
   "parser": "@babel/eslint-parser",
   "parserOptions": {
     "requireConfigFile": false
   },
-  "settings":{
+  "settings": {
     "node": {
-      "resolvePaths": ["node_modules/@types"],
-      "tryExtensions": [".js", ".json", ".node", ".ts", ".d.ts"]
-  }
+      "resolvePaths": [
+        "node_modules/@types"
+      ],
+      "tryExtensions": [
+        ".js",
+        ".json",
+        ".node",
+        ".ts",
+        ".d.ts"
+      ]
+    }
   },
+  "overrides": [
+    {
+      "files": [
+        "**/*.ts",
+        "**/*.tsx"
+      ],
+      "extends": [
+        "standard",
+        "plugin:security/recommended"
+      ],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "sourceType": "module"
+      }
+    }
+  ],
   "rules": {
     "quotes": [
       "error",
