@@ -1,7 +1,6 @@
 {
   "root": true,
   "parser": "@babel/eslint-parser",
-    
   "parserOptions": {
     "requireConfigFile": false
   },
@@ -29,26 +28,33 @@
     }
   ],
   "settings": {
-   // "import/parsers": {
-   //   "@typescript-eslint/parser": [
-    //    ".ts",
-    //    ".tsx"
-    //  ]
-   // },
-   // "import/resolver": {
-   //   "typescript": {
-   //     "alwaysTryTypes": true
-   //   }
-  //  },
+    "import/parsers": {
+      "@typescript-eslint/parser": [
+        ".ts",
+        ".tsx"
+      ]
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true
+      }
+    },
     "jest": {
       "version": 26
     },
     "node": {
-      "allowModules": ["electron"],
-      "tryExtensions": [".js", ".json", ".node", ".ts"]
+      "allowModules": [
+        "electron"
+      ],
+      "tryExtensions": [
+        ".js",
+        ".json",
+        ".node",
+        ".ts"
+      ]
     }
   },
-   "rules": {
-      "node/no-missing-import": "error"
+  "rules": {
+    "node/no-missing-import": "error"
   }
 }
