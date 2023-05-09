@@ -4,6 +4,15 @@
     "@typescript-eslint"
   ],
   "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "requireConfigFile": false
+  },
+  "settings":{
+    "node": {
+      "resolvePaths": ["node_modules/@types"],
+      "tryExtensions": [".js", ".json", ".node", ".ts", ".d.ts"]
+  }
+  },
   "rules": {
     "quotes": [
       "error",
