@@ -1,46 +1,54 @@
 {
   "root": true,
-  "parser": "@typescript-eslint/parser",
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "requireConfigFile": false
+  },
   "plugins": [
-    "@typescript-eslint",
-    "import"
+    "@typescript-eslint"
   ],
   "extends": [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended"
+    "standard",
+    "plugin:security/recommended"
   ],
-  "parserOptions": {
-    "ecmaVersion": 2019,
-    "sourceType": "module",
-    "rules": {
-      "quotes": [
-        "error",
-        "single"
+  "overrides": [
+    {
+      "files": [
+        "**/*.ts",
+        "**/*.tsx"
       ],
-      "filenames/match-regex": "off",
-      "no-console": "off",
-      "semi": "off",
-      "node/no-missing-import": [
-        "error",
-        {
-          "tryExtensions": [
-            ".js",
-            ".ts"
-          ],
-          "ignorePackages": {
-            "js": "never",
-            "jsx": "never",
-            "ts": "never",
-            "tsx": "never"
-          }
-        }
+      "extends": [
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
+      ],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "sourceType": "module"
+      }
+    }
+  ],
+  "settings": {
+    "node": {
+      "tryExtensions": [
+        ".js",
+        ".json",
+        ".node",
+        ".ts"
       ]
     },
-    "settings": {
-      "import/resolver": {
-        "node": true,
-        "typescript": true
+    "import/parsers": {
+      "@typescript-eslint/parser": [
+        ".ts",
+        ".tsx"
+      ]
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true
       }
+    },
+    "jest": {
+      "version": 26
     }
   }
 }
