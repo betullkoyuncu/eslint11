@@ -31,8 +31,7 @@
       "tryExtensions": [
         ".js",
         ".json",
-        ".node",
-        ".ts"
+        ".node"
       ]
     },
     "import/parsers": {
