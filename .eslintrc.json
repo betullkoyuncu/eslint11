@@ -23,13 +23,19 @@
       "node/no-missing-import": ["error", {
         "tryExtensions": [".js", ".ts"],
         "ignorePackages",
-      {
-        "js": "never",
-        "jsx": "never",
-        "ts": "never",
-        "tsx": "never"
-      }
+        {
+          "js": "never",
+          "jsx": "never",
+          "ts": "never",
+          "tsx": "never"
+        }
         }]
+    },
+    "settings": {
+      "import/resolver": {
+        "node": true,
+        "typescript": true
+      }
     }
   }
 }
