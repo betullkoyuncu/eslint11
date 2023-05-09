@@ -1,12 +1,12 @@
 {
   "root": true,
+  "plugins": [
+    "@typescript-eslint"
+  ],
   "parser": "@babel/eslint-parser",
   "parserOptions": {
     "requireConfigFile": false
   },
-  "plugins": [
-    "@typescript-eslint"
-  ],
   "extends": [
     "standard",
     "plugin:security/recommended"
