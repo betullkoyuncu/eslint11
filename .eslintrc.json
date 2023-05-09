@@ -43,11 +43,11 @@
     //    ".tsx"
     //  ]
    // },
-    "import/resolver": {
-      "typescript": {
-        "alwaysTryTypes": true
-      }
-    },
+   // "import/resolver": {
+   //   "typescript": {
+   //     "alwaysTryTypes": true
+   //   }
+  //  },
     "jest": {
       "version": 26
     }
