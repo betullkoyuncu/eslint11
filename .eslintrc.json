@@ -43,9 +43,7 @@
       "version": 26
     },
     "node": {
-      "allowModules": [
-        "electron"
-      ],
+      "allowModules": [],
       "tryExtensions": [
         ".js",
         ".json",
@@ -55,6 +53,9 @@
     }
   },
   "rules": {
+    "quotes": ["error", "single"],            
+    "no-console": "off",            
+    "semi": "off",
     "node/no-missing-import": "error"
   }
 }
