@@ -19,7 +19,8 @@
       "tryExtensions": [
         ".js",
         ".json",
-        ".node"
+        ".node",
+        ".ts"
       ]
     }
   },
