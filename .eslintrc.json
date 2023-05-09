@@ -7,60 +7,6 @@
   "parserOptions": {
     "requireConfigFile": false
   },
-  "extends": [
-    "standard",
-    "plugin:security/recommended"
-  ],
-  "overrides": [
-    {
-      "files": [
-        "**/*.ts",
-        "**/*.tsx"
-      ],
-      "extends": [
-        "plugin:@typescript-eslint/eslint-recommended",
-        "plugin:@typescript-eslint/recommended"
-      ],
-      "parser": "@typescript-eslint/parser",
-      "parserOptions": {
-        "sourceType": "module"
-      },
-      "plugins": [
-        "import"
-      ],
-      "rules": {
-        "import/no-unresolved": "error"
-      },
-      "settings": {
-        "import/parsers": {
-          "@typescript-eslint/parser": [
-            ".ts",
-            ".tsx"
-          ]
-        }
-      }
-    }
-  ],
-  "settings": {
-    "import/parsers": {
-      "@typescript-eslint/parser": [
-        ".ts",
-        ".tsx"
-      ]
-    },
-    "jest": {
-      "version": 26
-    },
-    "node": {
-      "allowModules": [],
-      "tryExtensions": [
-        ".js",
-        ".json",
-        ".node",
-        ".ts"
-      ]
-    }
-  },
   "rules": {
     "quotes": [
       "error",
