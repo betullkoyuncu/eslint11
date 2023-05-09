@@ -7,17 +7,6 @@
   "parserOptions": {
     "requireConfigFile": false
   },
-  "settings": {
-    "import/parsers": {
-      "@typescript-eslint/parser": [
-        ".ts",
-        ".tsx"
-      ]
-    },
-    "jest": {
-      "version": 26
-    }
-  },
   "rules": {
     "quotes": [
       "error",
