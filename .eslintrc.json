@@ -28,7 +28,6 @@
       "single"
     ],
     "no-console": "off",
-    "semi": "off",
-    "node/no-missing-import": "error"
+    "semi": "off"
   }
 }
