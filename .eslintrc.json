@@ -27,15 +27,7 @@
       },
       "plugins": [
         "import"
-      ],
-      "settings": {
-        "import/parsers": {
-          "@typescript-eslint/parser": [
-            ".ts",
-            ".tsx"
-          ]
-        }
-      }
+      ]
     }
   ],
   "settings": {
