@@ -3,9 +3,6 @@ awsasasasasas
 
 
 
-ğğğ
-
-
 
 
 
