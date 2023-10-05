@@ -1,8 +1,6 @@
 awsasasasasas
 
 
-
-
 ğğğ
 
 
