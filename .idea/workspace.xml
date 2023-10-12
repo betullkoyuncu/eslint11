@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c3c44c5-cc73-4d8d-8859-aaceeaf4afde" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eslint11" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-template-repo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/b.ts" beforeDir="false" afterPath="$PROJECT_DIR$/b.ts" afterDir="false" />
-    </list>
+    <list default="true" id="2c3c44c5-cc73-4d8d-8859-aaceeaf4afde" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,7 +101,7 @@
       <workItem from="1696841844749" duration="1200000" />
       <workItem from="1696929230214" duration="1637000" />
       <workItem from="1697012336954" duration="4142000" />
-      <workItem from="1697092268694" duration="2054000" />
+      <workItem from="1697092268694" duration="2537000" />
     </task>
     <servers />
   </component>
