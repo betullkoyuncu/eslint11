@@ -1,12 +1,12 @@
 awsasasasasas
 
+k
+
+
 
 
 
 ğğğ
-
-
-
 
 
 
